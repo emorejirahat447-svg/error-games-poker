@@ -98,6 +98,3 @@ export const requireSupabaseAuth = createMiddleware({ type: 'function' }).server
     });
   },
 );
-
-
-export { requireSupabaseAuth }

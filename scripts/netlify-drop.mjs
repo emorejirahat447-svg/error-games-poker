@@ -25,7 +25,7 @@ try {
   // No .env — rely on Netlify environment variables instead.
 }
 
-const missingEnv = ['VITE_SUPABASE_URL', 'VITE_SUPABASE_PUBLISHABLE_KEY'].filter((name) => !process.env[name]);
+const missingEnv = ['VITE_SUPABASE_URL', 'VITE_SUPABASE_ANON_KEY'].filter((name) => !process.env[name]);
 if (missingEnv.length > 0) {
   throw new Error(`Netlify build is missing ${missingEnv.join(', ')}; the site would open to an error page. Add them in Netlify's environment variables or a .env file.`);
 }
